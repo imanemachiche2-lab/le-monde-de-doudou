@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Le Monde de Doudou - Un Doudou, une histoire, pour la vie</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        doudouGreen: '#829b82',
+                        doudouSoftGreen: '#e6ede6',
+                        doudouBlue: '#85a4c4',
+                        doudouSoftBlue: '#edf3f8',
+                        doudouPink: '#f7d6e0',
+                        doudouCream: '#fbf9f5',
+                        doudouDark: '#3b3836',
+                        doudouAccent: '#e07a5f'
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                        heading: ['Fredoka', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #fbf9f5;
+            color: #3b3836;
+        }
+        h1, h2, h3, h4, .font-heading {
+            font-family: 'Fredoka', sans-serif;
+        }
+        .hero-bg {
+            background: linear-gradient(135deg, rgba(230, 237, 230, 0.85) 0%, rgba(237, 243, 248, 0.85) 100%), url('IMG_7513.jpg');
+            background-size: cover;
+            background-position: center;
+        }
+        .card-shadow {
+            box-shadow: 0 10px 30px -5px rgba(130, 155, 130, 0.15);
+        }
+    </style>
+</head>
+<body class="bg-doudouCream text-doudouDark antialiased">
+
+    <!-- Bandeau supérieur -->
+    <div class="bg-doudouGreen text-white text-xs sm:text-sm py-2 px-4 text-center font-medium sticky top-0 z-50 shadow-sm flex items-center justify-center gap-2">
+        <i class="fa-solid fa-gift animate-bounce"></i>
+        <span>Offre Spéciale Adoption : Certificat d'adoption personnalisé inclus avec chaque doudou ! • <strong>149 DH seulement</strong></span>
+    </div>
+
+    <!-- En-tête / Navigation -->
+    <header class="bg-white/80 backdrop-blur-md sticky top-[33px] sm:top-[37px] z-40 border-b border-stone-100">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <div class="w-12 h-12 rounded-full bg-doudouSoftGreen flex items-center justify-center text-doudouGreen text-xl font-heading shadow-inner">
+                    🐾
+                </div>
+                <div>
+                    <span class="font-heading text-xl sm:text-2xl font-bold tracking-tight text-doudouGreen block leading-none">Le Monde de Doudou</span>
+                    <span class="text-xs text-stone-500 font-medium">Un Doudou, une histoire, pour la vie</span>
+                </div>
+            </div>
+            
+            <nav class="hidden md:flex items-center gap-8 font-medium text-stone-600">
+                <a href="#collection" class="hover:text-doudouGreen transition-colors">Notre Collection</a>
+                <a href="#galerie" class="hover:text-doudouGreen transition-colors">Galerie Photos</a>
+                <a href="#concept" class="hover:text-doudouGreen transition-colors">Le Concept</a>
+                <a href="#avis" class="hover:text-doudouGreen transition-colors">Avis</a>
+            </nav>
+
+            <div>
+                <a href="#commander" class="bg-doudouGreen hover:bg-stone-700 text-white font-medium px-5 py-2.5 rounded-full shadow-lg shadow-doudouGreen/20 transition-all text-sm flex items-center gap-2">
+                    <i class="fa-solid fa-bag-shopping"></i>
+                    <span>Adopter un Doudou</span>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Section Héroïque -->
+    <section class="hero-bg py-16 sm:py-24 px-4 sm:px-6 lg:px-8 relative overflow-hidden">
+        <div class="max-w-5xl mx-auto text-center relative z-10">
+            <div class="inline-flex items-center gap-2 bg-white/95 backdrop-blur-sm px-4 py-1.5 rounded-full text-doudouGreen text-sm font-semibold mb-6 shadow-sm">
+                <i class="fa-solid fa-wand-magic-sparkles text-amber-400"></i>
+                <span>Compagnons d'exception & Certificat d'adoption inclus</span>
+            </div>
+            <h1 class="font-heading text-4xl sm:text-6xl lg:text-7xl font-bold text-stone-800 tracking-tight mb-6 leading-tight">
+                A friend for every story... <br>
+                <span class="text-doudouGreen">discover theirs.</span>
+            </h1>
+            <p class="text-lg sm:text-xl text-stone-600 max-w-2xl mx-auto mb-10 font-normal leading-relaxed">
+                "Un Doudou, une histoire, pour la vie. Toi et ton doudou, une aventure sans fin." Chacun de nos doudous attend son enfant pour partager des milliers de doux câlins.
+            </p>
+            <div class="flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#collection" class="w-full sm:w-auto bg-doudouGreen hover:bg-stone-700 text-white font-heading font-medium text-lg px-8 py-4 rounded-full shadow-xl shadow-doudouGreen/30 transition-all">
+                    Découvrir nos 4 Doudous (149 DH)
+                </a>
+                <a href="#galerie" class="w-full sm:w-auto bg-white/90 hover:bg-white text-stone-700 border border-stone-200 font-heading font-medium text-lg px-8 py-4 rounded-full shadow-sm transition-all">
+                    Voir la Galerie Photos
+                </a>
+            </div>
+
+            <!-- Image de famille principale -->
+            <div class="mt-12 rounded-3xl overflow-hidden shadow-2xl border-4 border-white/80 max-w-4xl mx-auto">
+                <img src="IMG_7513.jpg" alt="Le Monde de Doudou - Collection complète" class="w-full h-auto object-cover">
+            </div>
+        </div>
+    </section>
+
+    <!-- Collection des 4 Doudous -->
+    <section id="collection" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="text-center max-w-3xl mx-auto mb-16">
+            <span class="text-doudouGreen font-semibold tracking-wider text-sm uppercase block mb-2">Notre Famille Magique</span>
+            <h2 class="font-heading text-3xl sm:text-5xl font-bold text-stone-800 mb-4">Rencontrez nos 4 compagnons d'aventure</h2>
+            <p class="text-stone-600 text-base sm:text-lg">Chaque doudou possède sa propre personnalité, son secret et une belle histoire à révéler...</p>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+            
+            <!-- 1. Lilou (Lapine) -->
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-stone-100 flex flex-col justify-between">
+                <div class="relative bg-purple-50 p-4 flex items-center justify-center h-64 overflow-hidden">
+                    <img src="image_79c77c.jpeg" alt="Lilou la lapine aux fleurs" class="w-full h-full object-cover rounded-2xl shadow-md">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-purple-700 font-heading font-semibold text-xs px-3 py-1 rounded-full shadow-sm">Lapine</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-heading text-2xl font-bold text-stone-800">Lilou</h3>
+                            <span class="bg-doudouSoftGreen text-doudouGreen font-bold text-lg px-3 py-1 rounded-xl">149 DH</span>
+                        </div>
+                        <p class="text-xs text-purple-600 font-semibold mb-3">✨ La lapine aux fleurs</p>
+                        <p class="text-stone-600 text-sm mb-4 line-clamp-3">Un secret floral l'accompagne... Découvre son pouvoir magique dans son certificat d'adoption secret.</p>
+                    </div>
+                    <div>
+                        <div class="bg-stone-50 rounded-2xl p-3 mb-4 text-xs text-stone-500 space-y-1">
+                            <div>🎂 <strong>Anniversaire :</strong> 14/06/2026</div>
+                        </div>
+                        <button onclick="selectionnerDoudou('Lilou (Lapine aux fleurs)')" class="w-full bg-stone-900 hover:bg-doudouGreen text-white font-heading font-medium py-3 rounded-2xl transition-colors text-sm flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-heart"></i><span>Adopter Lilou (149 DH)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 2. Pandi (Panda) -->
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-stone-100 flex flex-col justify-between">
+                <div class="relative bg-emerald-50 p-4 flex items-center justify-center h-64 overflow-hidden">
+                    <img src="image_850979.jpeg" alt="Pandi le panda dormeur" class="w-full h-full object-cover rounded-2xl shadow-md">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-stone-800 font-heading font-semibold text-xs px-3 py-1 rounded-full shadow-sm">Panda</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-heading text-2xl font-bold text-stone-800">Pandi</h3>
+                            <span class="bg-doudouSoftGreen text-doudouGreen font-bold text-lg px-3 py-1 rounded-xl">149 DH</span>
+                        </div>
+                        <p class="text-xs text-emerald-600 font-semibold mb-3">🎋 Le panda dormeur</p>
+                        <p class="text-stone-600 text-sm mb-4 line-clamp-3">Une écharpe rouge, une aventure mystérieuse et une belle surprise cachée dans son histoire...</p>
+                    </div>
+                    <div>
+                        <div class="bg-stone-50 rounded-2xl p-3 mb-4 text-xs text-stone-500 space-y-1">
+                            <div>🎂 <strong>Anniversaire :</strong> 31/12/2026</div>
+                        </div>
+                        <button onclick="selectionnerDoudou('Pandi (Panda dormeur)')" class="w-full bg-stone-900 hover:bg-doudouGreen text-white font-heading font-medium py-3 rounded-2xl transition-colors text-sm flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-heart"></i><span>Adopter Pandi (149 DH)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 3. Pistache (Ours) -->
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-stone-100 flex flex-col justify-between">
+                <div class="relative bg-amber-50 p-4 flex items-center justify-center h-64 overflow-hidden">
+                    <img src="image_e18013.jpeg" alt="Pistache l'ours gourmand" class="w-full h-full object-cover rounded-2xl shadow-md">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-doudouGreen font-heading font-semibold text-xs px-3 py-1 rounded-full shadow-sm">Ours</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-heading text-2xl font-bold text-stone-800">Pistache</h3>
+                            <span class="bg-doudouSoftGreen text-doudouGreen font-bold text-lg px-3 py-1 rounded-xl">149 DH</span>
+                        </div>
+                        <p class="text-xs text-doudouGreen font-semibold mb-3">🧸 L'ours gourmand</p>
+                        <p class="text-stone-600 text-sm mb-4 line-clamp-3">Un pot de miel, une petite gourmandise et une belle leçon de vie à découvrir avec son enfant.</p>
+                    </div>
+                    <div>
+                        <div class="bg-stone-50 rounded-2xl p-3 mb-4 text-xs text-stone-500 space-y-1">
+                            <div>🎂 <strong>Anniversaire :</strong> 31/05/2026</div>
+                        </div>
+                        <button onclick="selectionnerDoudou('Pistache (Ours gourmand)')" class="w-full bg-stone-900 hover:bg-doudouGreen text-white font-heading font-medium py-3 rounded-2xl transition-colors text-sm flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-heart"></i><span>Adopter Pistache (149 DH)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- 4. Lili (Licorne) -->
+            <div class="bg-white rounded-3xl overflow-hidden card-shadow border border-stone-100 flex flex-col justify-between">
+                <div class="relative bg-pink-50 p-4 flex items-center justify-center h-64 overflow-hidden">
+                    <img src="image_eddb41.jpeg" alt="Lili la licorne" class="w-full h-full object-cover rounded-2xl shadow-md">
+                    <span class="absolute top-4 right-4 bg-white/90 backdrop-blur-sm text-pink-700 font-heading font-semibold text-xs px-3 py-1 rounded-full shadow-sm">Licorne</span>
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between">
+                    <div>
+                        <div class="flex justify-between items-start mb-2">
+                            <h3 class="font-heading text-2xl font-bold text-stone-800">Lili</h3>
+                            <span class="bg-doudouSoftGreen text-doudouGreen font-bold text-lg px-3 py-1 rounded-xl">149 DH</span>
+                        </div>
+                        <p class="text-xs text-pink-600 font-semibold mb-3">🦄 Lili la licorne</p>
+                        <p class="text-stone-600 text-sm mb-4 line-clamp-3">Porteuse de magie et de douces nuits, elle garde un secret que seul son propriétaire connaîtra.</p>
+                    </div>
+                    <div>
+                        <div class="bg-stone-50 rounded-2xl p-3 mb-4 text-xs text-stone-500 space-y-1">
+                            <div>🎂 <strong>Anniversaire :</strong> 24/08/2026</div>
+                        </div>
+                        <button onclick="selectionnerDoudou('Lili (Licorne)')" class="w-full bg-stone-900 hover:bg-doudouGreen text-white font-heading font-medium py-3 rounded-2xl transition-colors text-sm flex items-center justify-center gap-2">
+                            <i class="fa-solid fa-heart"></i><span>Adopter Lili (149 DH)</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Galerie Photos -->
+    <section id="galerie" class="py-16 bg-stone-50/80 border-y border-stone-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-2xl mx-auto mb-12">
+                <span class="text-doudouGreen font-semibold tracking-wider text-sm uppercase block mb-2">Immersion</span>
+                <h2 class="font-heading text-3xl font-bold text-stone-800 mb-3">Découvrez les détails de l'adoption</h2>
+                <p class="text-stone-600 text-sm">Boîte cadeau, certificat officiel, douceur et accessoires pour accompagner votre enfant au quotidien.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-2xl overflow-hidden shadow-md bg-white border border-stone-200 p-2">
+                    <img src="image_850979.jpeg" alt="Détails Pandi" class="rounded-xl w-full h-72 object-cover">
+                    <div class="p-3 text-center font-heading font-semibold text-stone-700 text-sm">Pandi : Douceur & Certificat</div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-md bg-white border border-stone-200 p-2">
+                    <img src="image_e18013.jpeg" alt="Détails Pistache" class="rounded-xl w-full h-72 object-cover">
+                    <div class="p-3 text-center font-heading font-semibold text-stone-700 text-sm">Pistache : Prêt pour l'aventure</div>
+                </div>
+                <div class="rounded-2xl overflow-hidden shadow-md bg-white border border-stone-200 p-2">
+                    <img src="image_eddb41.jpeg" alt="Détails Lili" class="rounded-xl w-full h-72 object-cover">
+                    <div class="p-3 text-center font-heading font-semibold text-stone-700 text-sm">Lili : Douces nuits & Câlins</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Le Concept & Certificat d'adoption -->
+    <section id="concept" class="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <span class="text-doudouGreen font-semibold tracking-wider text-sm uppercase block mb-2">Expérience Unique</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-bold text-stone-800 mb-6">Une adoption accompagnée de son certificat officiel</h2>
+                <p class="text-stone-600 text-base sm:text-lg mb-6 leading-relaxed">
+                    Chaque doudou commandé arrive dans sa magnifique boîte cadeau enveloppée de papier de soie, accompagné d'un <strong>Certificat d'Adoption officiel</strong> personnalisable. 
+                </p>
+                <ul class="space-y-4 mb-8">
+                    <li class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-doudouSoftGreen text-doudouGreen flex items-center justify-center shrink-0 mt-1 font-bold text-xs"><i class="fa-solid fa-check"></i></div>
+                        <span class="text-stone-700"><strong>Le Certificat :</strong> Pour officialiser l'amitié entre l'enfant et son nouveau compagnon.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-doudouSoftGreen text-doudouGreen flex items-center justify-center shrink-0 mt-1 font-bold text-xs"><i class="fa-solid fa-check"></i></div>
+                        <span class="text-stone-700"><strong>Les Contes & Histoires :</strong> Un petit livret reprenant l'histoire et les valeurs morales du doudou.</span>
+                    </li>
+                    <li class="flex items-start gap-3">
+                        <div class="w-6 h-6 rounded-full bg-doudouSoftGreen text-doudouGreen flex items-center justify-center shrink-0 mt-1 font-bold text-xs"><i class="fa-solid fa-check"></i></div>
+                        <span class="text-stone-700"><strong>Qualité Premium :</strong> Conçu pour durer toute la vie et rassurer les nuits des tout-petits.</span>
+                    </li>
+                </ul>
+                <div class="bg-doudouSoftGreen/60 p-5 rounded-2xl border border-doudouGreen/20">
+                    <p class="text-stone-800 text-sm font-medium">
+                        ✨ <strong>Tarif unique :</strong> <span class="text-doudouGreen font-bold text-lg">149 DH</span> (Hors frais de livraison et d'encaissement payés directement au transporteur lors de la réception).
+                    </p>
+                </div>
+            </div>
+            <div class="relative">
+                <div class="bg-gradient-to-tr from-doudouPink/30 to-doudouSoftGreen/50 p-4 rounded-3xl">
+                    <img src="IMG_7513.jpg" alt="Certificat d'adoption et boîte cadeau" class="rounded-2xl shadow-xl w-full object-cover h-[400px]">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Formulaire de commande (Relié à votre e-mail) -->
+    <section id="commander" class="py-20 px-4 sm:px-6 lg:px-8 bg-stone-900 text-white relative overflow-hidden">
+        <div class="max-w-3xl mx-auto relative z-10">
+            <div class="text-center mb-12">
+                <span class="text-doudouGreen font-semibold tracking-wider text-sm uppercase block mb-2">Commander en un clic</span>
+                <h2 class="font-heading text-3xl sm:text-5xl font-bold mb-4">Adoptez votre Doudou dès aujourd'hui</h2>
+                <p class="text-stone-400 text-sm sm:text-base">Remplissez le formulaire ci-dessous pour valider votre commande. Paiement en espèces à la réception.</p>
+            </div>
+
+            <div class="bg-white text-stone-800 rounded-3xl p-8 sm:p-12 card-shadow">
+                <!-- Formulaire configuré pour envoyer les données par e-mail à houda31zahraoui@gmail.com -->
+                <form action="https://api.web3forms.com/submit" method="POST" class="space-y-6">
+                    
+                    <!-- Clé secrète / Destinataire pour Web3Forms -->
+                    <input type="hidden" name="access_key" value="db589b27-5847-4940-b5bc-d20509a259c6">
+                    <input type="hidden" name="subject" value="Nouvelle commande - Le Monde de Doudou !">
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-700 mb-2">Nom complet *</label>
+                            <input type="text" name="Nom_Client" required class="w-full px-4 py-3 rounded-2xl bg-stone-50 border border-stone-200 focus:ring-2 focus:ring-doudouGreen text-sm" placeholder="Ex: Imane Machiche">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-700 mb-2">Numéro de Téléphone *</label>
+                            <input type="tel" name="Telephone" required class="w-full px-4 py-3 rounded-2xl bg-stone-50 border border-stone-200 focus:ring-2 focus:ring-doudouGreen text-sm" placeholder="Ex: 06 61 23 45 67">
+                        </div>
+                    </div>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-700 mb-2">Ville *</label>
+                            <input type="text" name="Ville" required class="w-full px-4 py-3 rounded-2xl bg-stone-50 border border-stone-200 focus:ring-2 focus:ring-doudouGreen text-sm" placeholder="Ex: Casablanca, Rabat...">
+                        </div>
+                        <div>
+                            <label class="block text-sm font-semibold text-stone-700 mb-2">Choix du Doudou *</label>
+                            <select id="doudou-choisi" name="Doudou_Choisi" required class="w-full px-4 py-3 rounded-2xl bg-stone-50 border border-stone-200 focus:ring-2 focus:ring-doudouGreen text-sm font-medium">
+                                <option value="Lilou (Lapine aux fleurs)">🐰 Lilou (La lapine aux fleurs)</option>
+                                <option value="Pandi (Panda dormeur)">🐼 Pandi (Le panda dormeur)</option>
+                                <option value="Pistache (Ours gourmand)">🐻 Pistache (L'ours gourmand)</option>
+                                <option value="Lili (Licorne)">🦄 Lili (La licorne)</option>
+                            </select>
+                        </div>
+                    </div>
+
+                    <div>
+                        <label class="block text-sm font-semibold text-stone-700 mb-2">Adresse de livraison complète *</label>
+                        <textarea name="Adresse" rows="3" required class="w-full px-4 py-3 rounded-2xl bg-stone-50 border border-stone-200 focus:ring-2 focus:ring-doudouGreen text-sm" placeholder="Rue, Quartier, Numéro..."></textarea>
+                    </div>
+
+                    <div class="bg-doudouSoftGreen/50 p-6 rounded-2xl border border-doudouGreen/20 space-y-2 text-sm text-stone-700">
+                        <div class="flex justify-between items-center font-medium">
+                            <span>Prix du Doudou + Certificat :</span>
+                            <span class="font-bold text-doudouGreen text-lg">149 DH</span>
+                        </div>
+                        <div class="flex justify-between items-center text-xs text-stone-500 border-t border-stone-200 pt-2">
+                            <span>Frais de livraison & encaissement :</span>
+                            <span>Payés séparément au transporteur à la livraison</span>
+                        </div>
+                    </div>
+
+                    <button type="submit" class="w-full bg-doudouGreen hover:bg-stone-800 text-white font-heading font-semibold py-4 rounded-2xl shadow-xl transition-all text-lg flex items-center justify-center gap-2 cursor-pointer">
+                        <i class="fa-solid fa-paper-plane"></i><span>Confirmer ma commande (149 DH)</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Pied de page -->
+    <footer class="bg-white border-t border-stone-200 py-12 px-4 sm:px-6 lg:px-8 text-stone-600 text-sm">
+        <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+            <div class="space-y-3">
+                <span class="font-heading text-lg font-bold text-doudouGreen">Le Monde de Doudou</span>
+                <p class="text-xs text-stone-500">Un Doudou, une histoire, pour la vie.</p>
+            </div>
+            <div>
+                <h4 class="font-heading font-semibold text-stone-800 mb-3">Collection</h4>
+                <ul class="space-y-2 text-xs text-stone-500">
+                    <li>Lilou, Pandi, Pistache, Lili</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading font-semibold text-stone-800 mb-3">Informations</h4>
+                <ul class="space-y-2 text-xs text-stone-500">
+                    <li>Prix : 149 DH (Hors livraison)</li>
+                    <li>Paiement à la livraison</li>
+                </ul>
+            </div>
+            <div>
+                <h4 class="font-heading font-semibold text-stone-800 mb-3">Contact</h4>
+                <div class="text-doudouGreen font-bold text-sm">
+                    <i class="fa-brands fa-whatsapp"></i> +212 7 70 64 91 97
+                </div>
+            </div>
+        </div>
+        <div class="max-w-7xl mx-auto border-t border-stone-100 pt-6 text-center text-xs text-stone-400">
+            © 2026 Le Monde de Doudou. Tous droits réservés.
+        </div>
+    </footer>
+
+    <!-- Script JavaScript -->
+    <script>
+        function selectionnerDoudou(nomDoudou) {
+            const select = document.getElementById('doudou-choisi');
+            for (let i = 0; i < select.options.length; i++) {
+                if (select.options[i].text.includes(nomDoudou)) {
+                    select.selectedIndex = i;
+                    break;
+                }
+            }
+            document.getElementById('commander').scrollIntoView({ behavior: 'smooth' });
+        }
+    </script>
+</body>
+</html>
